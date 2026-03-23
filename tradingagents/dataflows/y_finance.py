@@ -309,6 +309,7 @@ def get_fundamentals(
             ("Name", info.get("longName")),
             ("Sector", info.get("sector")),
             ("Industry", info.get("industry")),
+            ("Current Price", info.get("currentPrice") or info.get("regularMarketPrice")),
             ("Market Cap", info.get("marketCap")),
             ("PE Ratio (TTM)", info.get("trailingPE")),
             ("Forward PE", info.get("forwardPE")),

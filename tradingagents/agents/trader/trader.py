@@ -27,7 +27,17 @@ def create_trader(llm, memory):
 
         context = {
             "role": "user",
-            "content": f"Based on a comprehensive analysis by a team of analysts, here is an investment plan tailored for {company_name}. {instrument_context} This plan incorporates insights from current technical market trends, macroeconomic indicators, and social media sentiment. Use this plan as a foundation for evaluating your next trading decision.\n\nProposed Investment Plan: {investment_plan}\n\nLeverage these insights to make an informed and strategic decision.",
+            "content": f"""Based on a comprehensive analysis by a team of analysts, here is an investment plan tailored for {company_name}. {instrument_context} 
+
+This plan incorporates insights from current technical market trends, macroeconomic indicators, and social media sentiment. Use this plan as a foundation for evaluating your next trading decision.
+
+Proposed Investment Plan: {investment_plan}
+
+The fundamentals report contains a **Quantitative Valuation Analysis** section with a Python-computed DCF intrinsic value and a verdict (UNDERVALUED / FAIRLY VALUED / OVERVALUED). When making your final decision:
+1. Explicitly state the estimated intrinsic value range and the current market price discount/premium.
+2. Weigh the fundamental valuation signal against technical signals equally — neither should dominate by default.
+3. If the stock is deeply UNDERVALUED on fundamentals but technically bearish, articulate why you lean one way or the other.
+4. Leverage these insights to make an informed and strategic decision.""",
         }
 
         messages = [

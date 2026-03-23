@@ -30,7 +30,8 @@ from tradingagents.agents.utils.agent_utils import (
     get_income_statement,
     get_news,
     get_insider_transactions,
-    get_global_news
+    get_global_news,
+    calculate_intrinsic_value,
 )
 
 from .conditional_logic import ConditionalLogic
@@ -187,6 +188,8 @@ class TradingAgentsGraph:
                     get_balance_sheet,
                     get_cashflow,
                     get_income_statement,
+                    # Quantitative valuation tool
+                    calculate_intrinsic_value,
                 ]
             ),
         }

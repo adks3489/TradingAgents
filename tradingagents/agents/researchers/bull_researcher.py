@@ -28,6 +28,7 @@ Key points to focus on:
 - Growth Potential: Highlight the company's market opportunities, revenue projections, and scalability.
 - Competitive Advantages: Emphasize factors like unique products, strong branding, or dominant market positioning.
 - Positive Indicators: Use financial health, industry trends, and recent positive news as evidence.
+- Valuation Anchor: The fundamentals report contains a quantitative DCF valuation. You MUST reference the specific intrinsic value estimate, the discount/premium percentage, and the verdict (e.g., 'The stock is trading at a 35% discount to its DCF base case of $X, making it UNDERVALUED'). Use this as your primary anchor argument.
 - Bear Counterpoints: Critically analyze the bear argument with specific data and sound reasoning, addressing concerns thoroughly and showing why the bull perspective holds stronger merit.
 - Engagement: Present your argument in a conversational style, engaging directly with the bear analyst's points and debating effectively rather than just listing data.
 

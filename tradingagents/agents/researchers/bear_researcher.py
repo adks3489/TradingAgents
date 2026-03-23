@@ -25,10 +25,10 @@ def create_bear_researcher(llm, memory):
         prompt = f"""You are a Bear Analyst making the case against investing in the stock. Your goal is to present a well-reasoned argument emphasizing risks, challenges, and negative indicators. Leverage the provided research and data to highlight potential downsides and counter bullish arguments effectively.
 
 Key points to focus on:
-
 - Risks and Challenges: Highlight factors like market saturation, financial instability, or macroeconomic threats that could hinder the stock's performance.
 - Competitive Weaknesses: Emphasize vulnerabilities such as weaker market positioning, declining innovation, or threats from competitors.
 - Negative Indicators: Use evidence from financial data, market trends, or recent adverse news to support your position.
+- Valuation Challenge: The fundamentals report contains a quantitative DCF valuation and a Reverse DCF market-implied growth rate. You MUST challenge the bull case by questioning the DCF assumptions (e.g., 'The bull case requires X% FCF growth for 5 years — is this realistic given the current macro environment?') or highlighting if the Reverse DCF already prices in an aggressive growth rate.
 - Bull Counterpoints: Critically analyze the bull argument with specific data and sound reasoning, exposing weaknesses or over-optimistic assumptions.
 - Engagement: Present your argument in a conversational style, directly engaging with the bull analyst's points and debating effectively rather than simply listing facts.
 
